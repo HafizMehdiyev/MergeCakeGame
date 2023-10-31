@@ -21,8 +21,6 @@ public class TagManager : SingletoneBase<TagManager>
         FourSlice = 8,
         AllSlice=16,
         CompleteCake = 32,
-        Last = 64,
-        CherryHalf = 128,
-        CherryFull = 256
+        Last = 64
     }
 }
