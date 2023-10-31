@@ -87,7 +87,6 @@ public class GridSystem : MonoBehaviour
                 {
                     if (draggedObject.tag == objectHit.tag) //eger obyekt varsa ve taglar uygun gelirse
                     {
-                        //Debug.Log("Merge");
                         string SpawnObjName = TagManager.Instance.TagReturn(draggedObject.tag);
                         GameObject nextObj = Spawner.Instance.SpawnNewObject(SpawnObjName, draggedObject.transform);
                         nextObj.transform.DOScale(nextObj.transform.localScale.x + .15f, .1f).OnComplete(() => {
